@@ -11,7 +11,10 @@ function maxOfTwoNumbers(a, b) {
     return (isBigger ? a : b);
   }
 
-// Question 2
+// Question
+
+
+
 function maxOfThree(a, b, c) {
 if (a > b && a > c){
     return a
@@ -55,26 +58,41 @@ for(let i=0; i<arr.length; i++){
 }
 
 // Question 5
-const numberOfArguments = function() {
-
+const numberOfArguments = function(...args) {
+return args.length
 }
 
 // Question 6
-const reverseString = function() {
+const reverseString = function(string) {
+    let reverseString= string.split("").reverse().join("")
+
+}
+reverseString("mouse")
+// Question 7
+
+function findLongestWord(arr) {
+    let longest= arr[0].length
+    for (let i=1; i<arr.length; i++){
+if(longest< arr[i].length){
+    longest= arr[i]
 
 }
 
-// Question 7
-function findLongestWord() {
-
+    }
+    return longest
 }
 
 // Question 8
-function filterLongWords() {
-
+function filterLongWords(arr, i) {
+    let newArray=[];
+for (let k=0; k<arr.length; k++){
+    if (arr[k].length> i){
+       newArray.push(arr[k])
+    }
+}
 }
 
 // Bonus 1
-function charactersOccurencesCount() {
+function charactersOccurencesCount(string) {
 
 }
